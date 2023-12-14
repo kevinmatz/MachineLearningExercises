@@ -8,7 +8,9 @@
 
 * Read a CSV file into a DataFrame:
   * `df = pd.read_csv("filename.csv")`
-
+  * Note: Also works with `.csv.gz` files:
+    * `df = pd.read_csv("data/SCFP2019.csv.gz")`
+  
 * To show what columns exist and what their types are:
   * `df.info()`
 
@@ -27,4 +29,24 @@
   * `mask = df["TURNFEAR"] == 1`
   * `df = df[mask]`
 
+* Apply a function:
+  * `top_ten_trim_var = df.apply(trimmed_var, limits=(0.1, 0.1)).sort_values().tail(5)`
+
+* Get the values of the index column as a list:
+  * `top_ten_trim_var.index.to_list()`
+  * Output: `['DEBT', 'NETWORTH', 'HOUSES', 'NFIN', 'ASSET']`
+
+* Get a copy of a DataFrame with only certain columns included:
+  * `high_var_cols = ['DEBT', 'NETWORTH', 'HOUSES', 'NFIN', 'ASSET']`
+  * `X = df[high_var_cols]`
+
+* Convert all values in a DataFrame to type `int`
+  * `df.astype(int)`
+
+* Find the mean and standard deviation for all columns in a DataFrame
+  * `df.aggregate(["mean", "std"])`
+
+* Count the number of rows where column "BUS" has the value 1:
+  * `count = len([x for x in df["HBUS"] if x == 1])`
+  * Or, more efficiently and idiomatically with Pandas: `count = (df["HBUS"] == 1).sum()`
 
