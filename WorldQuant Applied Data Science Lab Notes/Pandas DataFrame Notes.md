@@ -50,3 +50,12 @@
   * `count = len([x for x in df["HBUS"] if x == 1])`
   * Or, more efficiently and idiomatically with Pandas: `count = (df["HBUS"] == 1).sum()`
 
+
+
+
+
+* TODO: DataFrame versus Series versus Numpy Arrays
+
+
+
+
