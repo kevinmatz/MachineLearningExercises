@@ -7,3 +7,8 @@
   * You have a feature matrix **X** but no target
 
 
+TODO: Summarize everything from the "Project 6 Done!"-type emails
+
+TODO: Confusion matrix
+TODO: Contingency table
+TODO: Chi-square test
