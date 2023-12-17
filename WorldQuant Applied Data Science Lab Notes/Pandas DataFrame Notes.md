@@ -29,6 +29,11 @@
   * `mask = df["TURNFEAR"] == 1`
   * `df = df[mask]`
 
+* Drop all rows with NaN values:
+  * `df = df.dropna()`
+  * `df.dropna(inplace=True)`
+  * Can also drop columns with NaN values: `df.dropna(axis="columns")`
+
 * Apply a function:
   * `top_ten_trim_var = df.apply(trimmed_var, limits=(0.1, 0.1)).sort_values().tail(5)`
 
@@ -54,7 +59,10 @@
 
 
 
-* TODO: DataFrame versus Series versus Numpy Arrays
+* TODO: DataFrame versus Series versus Numpy Arrays versus Python list
+  * TODO: See https://pandas.pydata.org/pandas-docs/version/0.21/10min.html
+  * TODO: See https://pandas.pydata.org/pandas-docs/version/0.21/dsintro.html#dsintro
+  
 
 
 
