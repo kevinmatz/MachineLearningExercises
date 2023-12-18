@@ -59,10 +59,11 @@
 
 
 
-* TODO: DataFrame versus Series versus Numpy Arrays versus Python list
+* TODO: DataFrame versus Series versus Numpy Arrays versus Python list versus Python dictionary
+  * Comparison chart of how to do operations with each one
   * TODO: See https://pandas.pydata.org/pandas-docs/version/0.21/10min.html
   * TODO: See https://pandas.pydata.org/pandas-docs/version/0.21/dsintro.html#dsintro
-  
+  * TODO: DataFrame iloc() function: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html
 
 
 
